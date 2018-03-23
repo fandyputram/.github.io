@@ -1,6 +1,5 @@
 function generateRandomNumber() {
 	document.getElementById("result").innerHTML = null;
-
 	var min = Number(document.randomData.min.value);
 	var max = Number(document.randomData.max.value);
 	var amount = Number(document.randomData.amount.value);
@@ -14,6 +13,7 @@ function generateRandomNumber() {
 	else
 	{
 		document.getElementById("alert").innerHTML=null;
+		document.getElementById("result").innerHTML='</br>';
 		var status=[false];
 		for(i = 0;i < amount; i++)
 		{
@@ -31,3 +31,4 @@ function generateRandomNumber() {
 		}
 	}
 }
+

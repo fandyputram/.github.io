@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+
 	<title>Randomize</title>	
 </head>
 
-    <body>
-        <div class="logo"><b><span>R</span>AN<span>D</span>OMI<span>Z</span>E<span>!</span></b></div>
+<!-- HEADER -->
 
-        <div id="p1">
-            <h2>Random a Number!</h2>
-            <h3>This form allows you to generate some random integers!</h3>
-            <h2 id="alert"></h4>
-            <form name="randomData">
-                <label>Each integer have a value between</label>
-                <input type="text" name="min" value="1"/>
-                <label>and</label>
-                <input type="text" name="max" value="100"/>
-                <label>(both inclusive).  
-                </br></br>
-                <label>Generate</label>
-                <input type="text" name="amount" value="5" />
-                <label>random integer.</label>
-                </br></br>
-                <input type="button" id="button" value="GENERATE!" onClick="generateRandomNumber()"/>
-            </form>
-        </div>
+<header>
+    <div class="header">Randomize</div>
+    
 
-        <div id="result"></div>
+</header>
 
-    </body>
+<body>
+    
+    <div id="p1">
+        <h2>Random a Number!</h2>
+        <h3>This form allows you to generate some random integers!</h3>
+        <h2 id="alert"></h4>
+        <form name="randomData">
+        <label>Each integer have a value between</label>
+        <input type="number" class="form" name="min" value="1"/>
+        <label>and</label>
+        <input type="number" class="form" name="max" value="100"/>
+        <label>(both inclusive).  
+        </br></br>
+        <label>Generate</label>
+        <input type="number" class="form" name="amount" value="5" />
+        <label>random integer.</label>
+        </br></br>
+        <input type="button" id="button" value="GENERATE!" onClick="generateRandomNumber()"/>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+</body>
 
 </html>

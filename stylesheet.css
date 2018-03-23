@@ -3,60 +3,57 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
 
+
 body {
-	background-color: #36384C;
+	background-color: #141732;
 	color: #E9DCCD;
 }
 
-.logo {
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.header {
   text-align: center;
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  font-family: neon;
+  color: #FB4264;
+  font-size: 7vw;
+  line-height: 7vw;
+  text-shadow: 0 0 3vw #F40A35;
 }
 
-.logo b{
-	font: 100 15vh 'Rammetto One';
-	color: beige;
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+
+.header {
+  animation: header 2s linear infinite;
+  -moz-animation: header 2s linear infinite;
+  -webkit-animation: header 2s linear infinite;
+  -o-animation: header 2s linear infinite;
 }
-.logo b span{
-  animation: blink linear infinite 2s;
+
+@keyframes header {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
 }
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79%{
-     color: #333;
-  }
-  80% {
-    
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
+
+.form {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  background-color: #E9DCCD;
+  color: #141732;
+  width: 75px;
 }
 
 #p1 {
@@ -70,22 +67,23 @@ body {
 }
 
 #button {
-	transition: padding 1s,font-size 1s,background-color 0.7s ease;
-	-webkit-transition: padding 1s,font-size 1s,background-color 0.7s ease;
-	background-color: #613A43;
+	transition: color 0.7s,background-color 0.5s ease;
+	-webkit-transition: color 1s,background-color 0.7s ease;
+	background-color: #141732;
+  color: #E9DCCD;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
+  border: none;
+  outline : none;
 	font-family: 'Roboto Slab', serif;
-	color: #E9DCCD;
 	padding: 15px 15px;
 	cursor : pointer;
 }
 
 #button:hover {
-	background-color: #849974;
-	font-size: 25px;
-	padding: 25px 25px;
+	background-color: #E9DCCD;
+  color: #141732;;
 }
 
 #result {
